@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Fira Sans';
+}
+
+a, h1{
+    text-decoration: none;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav{
+    padding: 1rem;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul a{
+    padding: 1rem 1rem;
+    color: rgb(0, 0, 0);
+    margin: 0 0.7rem;
+}
+
+main{
+    margin: 3rem 0;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+}
+
+.perfil img{
+    max-width: 360px;
+}
+
+.perfil div{
+    margin: 0 auto;
+    position: relative;
+}
+
+.perfil h1{
+    font-size: 72px;
+    font-weight: bold;
+    max-width: 10ch;    
+}
+
+.perfil h1::before{
+    content: url(images/detalhe.svg);
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: -30px;
+}
+
+.perfil p{
+    font-size: 24px;
+    font-weight: 400;
+}
