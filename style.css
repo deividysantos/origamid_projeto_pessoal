@@ -4,11 +4,17 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Fira Sans';
+    padding: 1rem;
+    background-color: white;
 }
 
-a, h1{
+a, h1, p, h3{
     text-decoration: none;
     margin: 0;
+}
+
+ul{
+    padding: 0;
 }
 
 li{
@@ -20,8 +26,12 @@ header{
     justify-content: space-between;
 }
 
-header nav{
+header img{
     padding: 1rem;
+}
+
+header nav{
+    
 }
 
 header nav ul{
@@ -33,19 +43,23 @@ header nav ul a{
     padding: 1rem 1rem;
     color: rgb(0, 0, 0);
     margin: 0 0.7rem;
+    font-size: 1.1rem;
 }
 
 main{
     margin: 3rem 0;
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    gap: 7rem 0;
+}
+
+.img-perfil{
+    max-width: 360px;
 }
 
 .perfil{
     display: flex;
     align-items: center;
-}
-
-.perfil img{
-    max-width: 360px;
 }
 
 .perfil div{
@@ -70,4 +84,67 @@ main{
 .perfil p{
     font-size: 24px;
     font-weight: 400;
+}
+
+.txt-xp{
+    color: #E5E5E5;
+    font-size: 9rem;
+    word-wrap: break-word;
+    max-width: 3.8ch;
+}
+
+.xp{
+    padding: 2rem;
+}
+
+.xp p{
+    font-size: 1.5rem;
+}
+
+.card-xp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+    max-width: 42rem;
+    background-color: #F5F5F5;
+    padding: 1rem;
+    border-radius: 4px;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.card-xp p{
+    color: #525252;
+    font-size: 0.9rem;
+}
+
+.card-xp-titulo::before{
+    content: url(images/detalhe2.svg);
+    position: absolute;
+    left: -4px;
+
+}
+
+.card-xp-cargo{    
+    grid-column: 2;
+    grid-row: 1;
+    
+}
+
+.card-xp h3{
+    
+}
+
+.tech-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.tech-item{
+    background-color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    max-width: fit-content;  
 }
