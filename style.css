@@ -3,7 +3,6 @@ body{
     padding: 0;    
     margin: 0 auto;
     font-family: 'Fira Sans';
-    padding: 1rem;
     background-color: white;
 }
 
@@ -46,9 +45,9 @@ header nav ul a{
 .container{
     display: grid;
     grid-template-columns: 30rem 1fr;
-    gap: 7rem 0;
-    margin: 4rem auto;
-    max-width: 1200px;
+    margin: 0 auto;
+    width: 1200px;    
+    padding: 7rem 0; 
 }
 
 .img-perfil{
@@ -91,13 +90,13 @@ header nav ul a{
     max-width: 3.8ch;
 }
 
-.xp{
-    padding: 2rem;
+.xp p{
+    font-size: 1.7rem;
+    max-width: 45ch;
 }
 
-.xp p{
-    font-size: 1.5rem;
-    max-width: 50ch;
+.card-list{
+    margin-top: 4rem;
 }
 
 .card-xp{
@@ -120,7 +119,7 @@ header nav ul a{
 .card-xp-titulo::before{
     content: url(images/detalhe2.svg);
     position: absolute;
-    left: -4px;
+    left: -2px;
 }
 
 .card-xp-cargo{    
@@ -144,10 +143,8 @@ header nav ul a{
 }
 
 .form{
-    grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: 30rem 1fr;
-    background-color: #141414;
+    background-color: #141414;  
+     
 }
 
 .txt-formacao{
@@ -165,20 +162,25 @@ header nav ul a{
     color: #A3A3A3;
 }
 
+.formacao p{
+    font-size: 1.5rem;
+    max-width: 40ch;
+}
+
 .titulo-list{
     display: flex;
-
+    gap: 0 1rem;
 }
 
 .titulo-item{
     display: flex;
     flex-direction: column;
-    background-color: #000;
     padding: 1rem 1rem;
     border-radius: 4px;
-    max-width: 12.75rem;
+    width: 11rem;
     height: 11rem;
-    position: relative;
+    position: relative;    
+    background-color: #000;
 }
 
 .titulo-nome{
@@ -188,7 +190,7 @@ header nav ul a{
 .titulo-nome::before{
     content: url(images/detalhe2.svg);
     position: absolute;
-    left: -0.3rem;
+    left: -0.1rem;
 }
 
 .titulo-instituicao{
