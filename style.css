@@ -1,7 +1,6 @@
 body{
     margin: 0;
-    padding: 0;
-    max-width: 1200px;
+    padding: 0;    
     margin: 0 auto;
     font-family: 'Fira Sans';
     padding: 1rem;
@@ -24,14 +23,12 @@ li{
 header{
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header img{
     padding: 1rem;
-}
-
-header nav{
-    
 }
 
 header nav ul{
@@ -46,11 +43,12 @@ header nav ul a{
     font-size: 1.1rem;
 }
 
-main{
-    margin: 3rem 0;
+.container{
     display: grid;
     grid-template-columns: 30rem 1fr;
     gap: 7rem 0;
+    margin: 4rem auto;
+    max-width: 1200px;
 }
 
 .img-perfil{
@@ -99,6 +97,7 @@ main{
 
 .xp p{
     font-size: 1.5rem;
+    max-width: 50ch;
 }
 
 .card-xp{
@@ -149,7 +148,6 @@ main{
     display: grid;
     grid-template-columns: 30rem 1fr;
     background-color: #141414;
-    margin: 0;
 }
 
 .txt-formacao{
