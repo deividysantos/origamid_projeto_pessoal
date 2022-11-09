@@ -88,7 +88,8 @@ header nav ul a{
     color: #E5E5E5;
     font-size: 9rem;
     word-wrap: break-word;
-    max-width: 3.8ch;
+    max-width: 4ch;
+    text-transform: uppercase;
 }
 
 .xp p{
@@ -152,7 +153,8 @@ header nav ul a{
     color: #000;
     font-size: 9rem;
     word-wrap: break-word;
-    max-width: 4ch;
+    max-width: 5ch;
+    text-transform: uppercase;
 }
 
 .strong-white{
@@ -163,7 +165,7 @@ header nav ul a{
     color: #A3A3A3;
 }
 
-.formacao p{
+.formacao .formacao-msg{
     font-size: 1.5rem;
     max-width: 40ch;
 }
@@ -182,6 +184,10 @@ header nav ul a{
     height: 11rem;
     position: relative;    
     background-color: #000;
+}
+
+.titulo-tipo{
+    text-transform: uppercase;
 }
 
 .titulo-nome{
