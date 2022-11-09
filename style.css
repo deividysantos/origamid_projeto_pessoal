@@ -22,8 +22,9 @@ li{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 header img{
@@ -67,7 +68,7 @@ header nav ul a{
 .perfil h1{
     font-size: 72px;
     font-weight: bold;
-    max-width: 10ch;    
+    max-width: 12ch;    
 }
 
 .perfil h1::before{
@@ -169,7 +170,7 @@ header nav ul a{
 
 .titulo-list{
     display: flex;
-    gap: 0 1rem;
+    gap: 0 2rem;
 }
 
 .titulo-item{
@@ -197,23 +198,61 @@ header nav ul a{
     margin: auto 0 0.5rem 0;
 }
 
+.formacao-extra{
+    grid-column: 2;
+    color: #8F8F8F;
+}
+
+.formacao-extra h3{
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.form-extra-item{
+    padding: 1rem 0;
+    position: relative;
+}
+
+.form-extra-item-curso::before{
+    content: url(images/cursos.svg);
+    position: absolute;
+    left: -2.5rem;
+}
+
+.form-extra-item-lang::before{
+    content: url(images/idiomas.svg);
+    position: absolute;
+    left: -2.5rem;
+}
+
+.certificado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    max-width: 42.5rem;
+}
+
+.certificado p{
+    display: block;
+}
+
 footer{
     background-color: #000;
-    padding: 7rem 0;
-    
+    position: relative;   
 }
 
-.contant{
-    width: 1200px;
-    margin: 0 auto;
+.msg-footer::before{
+    content: url(images/detalhe.svg);
+    position: absolute;
+    top: -3.8rem;
 }
 
-footer div{
-    display: flex;
-}
-
-footer p{
+.msg-footer{
     color: #CCCCCC;
+    font-size: 1.5rem;
+    max-width: 32ch;
+    margin: auto 0;
 }
 
 footer .direitos{
@@ -224,4 +263,15 @@ footer .direitos{
     color: #fff;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.contatos p{
+    margin-top: 1.2rem;
+}
+
+.direitos{
+    margin-top: 5rem;
 }
